@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22CEF15A1EADFE07009873FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEF1591EADFE07009873FE /* AppDelegate.swift */; };
+		22CEF1611EADFE07009873FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CEF1601EADFE07009873FE /* Assets.xcassets */; };
+		22CEF1641EADFE07009873FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CEF1621EADFE07009873FE /* LaunchScreen.storyboard */; };
+		6B197ECA1EAFA1B0002012FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197EC51EAFA1B0002012FB /* Constants.swift */; };
+		6B197ECC1EAFA1B0002012FB /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197EC81EAFA1B0002012FB /* MainRouter.swift */; };
+		6B197EDA1EAFA4F6002012FB /* CardsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197ECF1EAFA4F6002012FB /* CardsDataSource.swift */; };
+		6B197EDB1EAFA4F6002012FB /* CardsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197ED11EAFA4F6002012FB /* CardsInteractor.swift */; };
+		6B197EDC1EAFA4F6002012FB /* CardsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197ED31EAFA4F6002012FB /* CardsPresenter.swift */; };
+		6B197EDD1EAFA4F6002012FB /* CardsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197ED51EAFA4F6002012FB /* CardsRepository.swift */; };
+		6B197EDE1EAFA4F6002012FB /* CardsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197ED71EAFA4F6002012FB /* CardsRouter.swift */; };
+		6B197EDF1EAFA4F6002012FB /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197ED91EAFA4F6002012FB /* CardsViewController.swift */; };
+		6B197EE21EB088D9002012FB /* Collectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197EE11EB088D9002012FB /* Collectionable.swift */; };
+		6B197EE41EB08946002012FB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197EE31EB08946002012FB /* Reusable.swift */; };
+		6B197EE71EB089BF002012FB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197EE61EB089BF002012FB /* Card.swift */; };
+		6B197EE91EB09E9C002012FB /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197EE81EB09E9C002012FB /* CardViewModel.swift */; };
+		6B197EEB1EB0AFE5002012FB /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197EEA1EB0AFE5002012FB /* CardCollectionViewCell.swift */; };
+		6B197EED1EB0F03D002012FB /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B197EEC1EB0F03D002012FB /* CardDetailViewController.swift */; };
+		A195BB3DF63FF29A0BE7E368 /* Pods_AgilePoker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D06615CD5741F0B3340C3A4 /* Pods_AgilePoker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22CEF1561EADFE07009873FE /* AgilePoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgilePoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CEF1591EADFE07009873FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22CEF1601EADFE07009873FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22CEF1631EADFE07009873FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22CEF1651EADFE07009873FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CEE82B6ECA2065DC3C6BD84 /* Pods-AgilePoker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilePoker.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgilePoker/Pods-AgilePoker.release.xcconfig"; sourceTree = "<group>"; };
+		5D06615CD5741F0B3340C3A4 /* Pods_AgilePoker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgilePoker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B197EC51EAFA1B0002012FB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6B197EC81EAFA1B0002012FB /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		6B197ECF1EAFA4F6002012FB /* CardsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsDataSource.swift; sourceTree = "<group>"; };
+		6B197ED11EAFA4F6002012FB /* CardsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsInteractor.swift; sourceTree = "<group>"; };
+		6B197ED31EAFA4F6002012FB /* CardsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsPresenter.swift; sourceTree = "<group>"; };
+		6B197ED51EAFA4F6002012FB /* CardsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsRepository.swift; sourceTree = "<group>"; };
+		6B197ED71EAFA4F6002012FB /* CardsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsRouter.swift; sourceTree = "<group>"; };
+		6B197ED91EAFA4F6002012FB /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		6B197EE11EB088D9002012FB /* Collectionable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectionable.swift; sourceTree = "<group>"; };
+		6B197EE31EB08946002012FB /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		6B197EE61EB089BF002012FB /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6B197EE81EB09E9C002012FB /* CardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		6B197EEA1EB0AFE5002012FB /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		6B197EEC1EB0F03D002012FB /* CardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		E47DC32A77363BFF3733EC00 /* Pods-AgilePoker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilePoker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgilePoker/Pods-AgilePoker.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22CEF1531EADFE07009873FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A195BB3DF63FF29A0BE7E368 /* Pods_AgilePoker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04B91823FD90851EC6166DB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E47DC32A77363BFF3733EC00 /* Pods-AgilePoker.debug.xcconfig */,
+				5CEE82B6ECA2065DC3C6BD84 /* Pods-AgilePoker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		22CEF14D1EADFE07009873FE = {
+			isa = PBXGroup;
+			children = (
+				22CEF1581EADFE07009873FE /* AgilePoker */,
+				22CEF1571EADFE07009873FE /* Products */,
+				04B91823FD90851EC6166DB1 /* Pods */,
+				66E40EEF876143FAE46BC5AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22CEF1571EADFE07009873FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22CEF1561EADFE07009873FE /* AgilePoker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22CEF1581EADFE07009873FE /* AgilePoker */ = {
+			isa = PBXGroup;
+			children = (
+				22CEF1591EADFE07009873FE /* AppDelegate.swift */,
+				6B197EC21EAFA139002012FB /* Resources */,
+				6B197EC31EAFA1B0002012FB /* Sources */,
+			);
+			path = AgilePoker;
+			sourceTree = "<group>";
+		};
+		66E40EEF876143FAE46BC5AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D06615CD5741F0B3340C3A4 /* Pods_AgilePoker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B197EC21EAFA139002012FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22CEF1601EADFE07009873FE /* Assets.xcassets */,
+				22CEF1651EADFE07009873FE /* Info.plist */,
+				22CEF1621EADFE07009873FE /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6B197EC31EAFA1B0002012FB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6B197EC41EAFA1B0002012FB /* Commons */,
+				6B197EC91EAFA1B0002012FB /* Modules */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6B197EC41EAFA1B0002012FB /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				6B197EC51EAFA1B0002012FB /* Constants.swift */,
+				6B197EE51EB089AE002012FB /* Models */,
+				6B197EC61EAFA1B0002012FB /* Visuals */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		6B197EC61EAFA1B0002012FB /* Visuals */ = {
+			isa = PBXGroup;
+			children = (
+				6B197EE11EB088D9002012FB /* Collectionable.swift */,
+				6B197EC81EAFA1B0002012FB /* MainRouter.swift */,
+				6B197EE31EB08946002012FB /* Reusable.swift */,
+			);
+			path = Visuals;
+			sourceTree = "<group>";
+		};
+		6B197EC91EAFA1B0002012FB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6B197ECD1EAFA4F6002012FB /* Cards */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6B197ECD1EAFA4F6002012FB /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				6B197ECE1EAFA4F6002012FB /* DataSource */,
+				6B197ED01EAFA4F6002012FB /* Interactor */,
+				6B197ED21EAFA4F6002012FB /* Presenter */,
+				6B197ED41EAFA4F6002012FB /* Repository */,
+				6B197ED61EAFA4F6002012FB /* Router */,
+				6B197ED81EAFA4F6002012FB /* View */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		6B197ECE1EAFA4F6002012FB /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6B197ECF1EAFA4F6002012FB /* CardsDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		6B197ED01EAFA4F6002012FB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6B197ED11EAFA4F6002012FB /* CardsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6B197ED21EAFA4F6002012FB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6B197ED31EAFA4F6002012FB /* CardsPresenter.swift */,
+				6B197EE81EB09E9C002012FB /* CardViewModel.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6B197ED41EAFA4F6002012FB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6B197ED51EAFA4F6002012FB /* CardsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6B197ED61EAFA4F6002012FB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6B197ED71EAFA4F6002012FB /* CardsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6B197ED81EAFA4F6002012FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B197EEA1EB0AFE5002012FB /* CardCollectionViewCell.swift */,
+				6B197EEC1EB0F03D002012FB /* CardDetailViewController.swift */,
+				6B197ED91EAFA4F6002012FB /* CardsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B197EE51EB089AE002012FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B197EE61EB089BF002012FB /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22CEF1551EADFE07009873FE /* AgilePoker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22CEF1681EADFE07009873FE /* Build configuration list for PBXNativeTarget "AgilePoker" */;
+			buildPhases = (
+				82FDD7B354BD6BB6BB1F71E8 /* [CP] Check Pods Manifest.lock */,
+				22CEF1521EADFE07009873FE /* Sources */,
+				22CEF1531EADFE07009873FE /* Frameworks */,
+				22CEF1541EADFE07009873FE /* Resources */,
+				82BA5FE1F1E1366FAA360486 /* [CP] Embed Pods Frameworks */,
+				34B860D0F305E0F653FF2B1A /* [CP] Copy Pods Resources */,
+				6B197EE01EAFA7B6002012FB /* Fabric */,
+				6BF4B7CA1F67F6E60025CB68 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgilePoker;
+			productName = AgilePoker;
+			productReference = 22CEF1561EADFE07009873FE /* AgilePoker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22CEF14E1EADFE07009873FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Vector;
+				TargetAttributes = {
+					22CEF1551EADFE07009873FE = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 84GXHXKC7C;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 22CEF1511EADFE07009873FE /* Build configuration list for PBXProject "AgilePoker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22CEF14D1EADFE07009873FE;
+			productRefGroup = 22CEF1571EADFE07009873FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22CEF1551EADFE07009873FE /* AgilePoker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22CEF1541EADFE07009873FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CEF1641EADFE07009873FE /* LaunchScreen.storyboard in Resources */,
+				22CEF1611EADFE07009873FE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34B860D0F305E0F653FF2B1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AgilePoker/Pods-AgilePoker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B197EE01EAFA7B6002012FB /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 585bee49f0170f8519bbbcdf09097813ae61d6fc 0ea3ec5b44b07fe1d9ee334228e84398a4d5eb57f7e8947f89d00546dbd3311b";
+		};
+		6BF4B7CA1F67F6E60025CB68 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		82BA5FE1F1E1366FAA360486 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AgilePoker/Pods-AgilePoker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/VMRemoteConfig/VMRemoteConfig.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VMRemoteConfig.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AgilePoker/Pods-AgilePoker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82FDD7B354BD6BB6BB1F71E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgilePoker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22CEF1521EADFE07009873FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B197EE91EB09E9C002012FB /* CardViewModel.swift in Sources */,
+				6B197EE41EB08946002012FB /* Reusable.swift in Sources */,
+				6B197EDE1EAFA4F6002012FB /* CardsRouter.swift in Sources */,
+				6B197EDF1EAFA4F6002012FB /* CardsViewController.swift in Sources */,
+				6B197EED1EB0F03D002012FB /* CardDetailViewController.swift in Sources */,
+				6B197EE71EB089BF002012FB /* Card.swift in Sources */,
+				6B197ECC1EAFA1B0002012FB /* MainRouter.swift in Sources */,
+				22CEF15A1EADFE07009873FE /* AppDelegate.swift in Sources */,
+				6B197EDA1EAFA4F6002012FB /* CardsDataSource.swift in Sources */,
+				6B197EDB1EAFA4F6002012FB /* CardsInteractor.swift in Sources */,
+				6B197EDD1EAFA4F6002012FB /* CardsRepository.swift in Sources */,
+				6B197EE21EB088D9002012FB /* Collectionable.swift in Sources */,
+				6B197ECA1EAFA1B0002012FB /* Constants.swift in Sources */,
+				6B197EEB1EB0AFE5002012FB /* CardCollectionViewCell.swift in Sources */,
+				6B197EDC1EAFA4F6002012FB /* CardsPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22CEF1621EADFE07009873FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22CEF1631EADFE07009873FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22CEF1661EADFE07009873FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22CEF1671EADFE07009873FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22CEF1691EADFE07009873FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47DC32A77363BFF3733EC00 /* Pods-AgilePoker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 84GXHXKC7C;
+				INFOPLIST_FILE = AgilePoker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vectormobile.agilepoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ca54d41f-e0cb-4241-ab04-334f9eef8e29";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_Wildcard;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		22CEF16A1EADFE07009873FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CEE82B6ECA2065DC3C6BD84 /* Pods-AgilePoker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = B7ZU76GRJ4;
+				INFOPLIST_FILE = AgilePoker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vectormobile.agilepoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9c4714e4-e578-40aa-b5da-083ecb52efe2";
+				PROVISIONING_PROFILE_SPECIFIER = VectorAgilePoker_AppStore;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22CEF1511EADFE07009873FE /* Build configuration list for PBXProject "AgilePoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CEF1661EADFE07009873FE /* Debug */,
+				22CEF1671EADFE07009873FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22CEF1681EADFE07009873FE /* Build configuration list for PBXNativeTarget "AgilePoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CEF1691EADFE07009873FE /* Debug */,
+				22CEF16A1EADFE07009873FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22CEF14E1EADFE07009873FE /* Project object */;
+}

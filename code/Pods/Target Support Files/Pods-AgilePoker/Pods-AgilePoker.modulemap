@@ -1,0 +1,6 @@
+framework module Pods_AgilePoker {
+  umbrella header "Pods-AgilePoker-umbrella.h"
+
+  export *
+  module * { export * }
+}
